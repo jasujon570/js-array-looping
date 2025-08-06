@@ -7,7 +7,6 @@ for (i = 0; i < colors.length; i++) {
 }
 console.log(reverseArray);
 
-
 // using while loop
 let n = 0;
 while(n<colors.length) {
@@ -16,10 +15,18 @@ while(n<colors.length) {
 }
 console.log(reverseArray);
 
-// using for...of 
+// using for...of
 
 const reversed = [];
 for (const color of colors){
     reversed.unshift(color);
 }
 console.log(reversed);
+
+// using another for loop
+
+const reversedOfColors = [];
+for (i = colors.length - 1; i >= 0; i--) {
+  reversedOfColors.push(colors[i]);
+}
+console.log(reversedOfColors);
