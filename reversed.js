@@ -9,17 +9,17 @@ console.log(reverseArray);
 
 // using while loop
 let n = 0;
-while(n<colors.length) {
-    reverseArray.unshift(colors[n]);
-    n++;
+while (n < colors.length) {
+  reverseArray.unshift(colors[n]);
+  n++;
 }
 console.log(reverseArray);
 
 // using for...of
 
 const reversed = [];
-for (const color of colors){
-    reversed.unshift(color);
+for (const color of colors) {
+  reversed.unshift(color);
 }
 console.log(reversed);
 
