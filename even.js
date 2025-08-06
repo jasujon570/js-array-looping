@@ -19,3 +19,15 @@ for (n = 0; n < numbers.length; n++) {
   }
 }
 console.log(getEvenNumber);
+
+// using while loop
+let evenNum = 0;
+let getEvenNum = [];
+while (evenNum < numbers.length) {
+  if (numbers[evenNum] % 2 === 0) {
+    getEvenNum.push(numbers[evenNum])
+  }
+  evenNum++;
+}
+
+console.log(getEvenNum);
