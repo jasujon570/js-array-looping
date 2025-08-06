@@ -30,3 +30,8 @@ for (i = colors.length - 1; i >= 0; i--) {
   reversedOfColors.push(colors[i]);
 }
 console.log(reversedOfColors);
+
+// using reverse method
+
+const reverseOfColors = colors.reverse();
+console.log(reverseOfColors);
