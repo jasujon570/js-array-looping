@@ -49,3 +49,11 @@ for (let i = convertToWords.length - 1; i >= 0; i--) {
 }
 
 console.log(reversedSentence);
+
+// using .split(), .reverse() and join()
+
+let myStr = 'I will be a web developer one day';
+
+let reversedMyStr = myStr.split(' ').reverse().join(' ');
+
+console.log(reversedMyStr);
