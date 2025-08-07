@@ -58,21 +58,24 @@
 
 // console.log(reversedMyStr);
 
-
-
 // My experiment
 
+let sequences = "one two three four five";
 
-let sequences = 'one two three four five';
+let reversedSequence = sequences.split(" ").reverse().join(" ");
+// console.log(reversedSequence);
 
-let reversedSequence = sequences.split(' ').reverse().join(' ');
-console.log(reversedSequence);
-
-
-let sentenceOfWord = sequences.split(' '); //convert string to array
+let sentenceOfWord = sequences.split(" "); //convert string to array
 let reservedSequence = []; //reserved the reversed array value into the variable
-for(let sequence of sentenceOfWord) { //for of loop
-    reservedSequence.unshift(sequence); //reverse the value
-}   
-console.log(reservedSequence);
-console.log(reservedSequence.join(' '));
+for (let sequence of sentenceOfWord) { //for of loop
+  reservedSequence.unshift(sequence); //reverse the value
+}
+console.log(reservedSequence.join(" "));
+
+// for loop
+let reservedValue = [];
+for (i = 0; i < sentenceOfWord.length; i++) {
+  reservedValue.unshift(sentenceOfWord[i]);
+}
+
+console.log(reservedSequence.join(" "));
