@@ -63,7 +63,7 @@
 let sequences = "one two three four five";
 
 let reversedSequence = sequences.split(" ").reverse().join(" ");
-// console.log(reversedSequence);
+console.log(reversedSequence);
 
 let sentenceOfWord = sequences.split(" "); //convert string to array
 let reservedSequence = []; //reserved the reversed array value into the variable
@@ -79,3 +79,14 @@ for (i = 0; i < sentenceOfWord.length; i++) {
 }
 
 console.log(reservedSequence.join(" "));
+
+// using while loop
+
+let n = 0;
+let value = [];
+while (n < sentenceOfWord.length){
+    value.unshift(sentenceOfWord[n])
+    n++;
+}
+console.log(value.join(' '));
+
